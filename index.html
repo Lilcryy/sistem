@@ -68,20 +68,7 @@
                 window.location.href = data.redirect;
             }
         }
-                // Получаем параметры lobbyId и userId из текущего URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const lobbyId = urlParams.get('lobbyId');
-        const userId = urlParams.get('userId');
-
-        // Формируем URL для game.html с параметрами
-        let gameUrl = 'game.html';
-        if (lobbyId && userId) {
-            gameUrl += `?lobbyId=${lobbyId}&userId=${userId}`;
-        }
-
-        // Перенаправляем на game.html
-        window.location.href = gameUrl;
-    </script>
+    <script>
 </head>
 <body>
     <h1>Lobby Management</h1>
